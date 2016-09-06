@@ -1,9 +1,5 @@
 
 <!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="zh-cn"> <![endif]-->
-<!--[if IE 9]> <html class="ie9" lang="zh-cn"> <![endif]-->
-<!--[if IE 10]> <html class="ie10" lang="zh-cn"> <![endif]-->
-<!--[if (gt IE 10)|!(IE)]> <html lang="zh-cn"> <![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,31 +11,17 @@
 
     <title>Redloop Technologies</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <!--<link href="css/theme.css" rel="stylesheet">-->
-    <link href="css/styles-3.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!--link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
 
   <script src="//localhost:9000/livereload.js"></script>
     <script src="js/modernizr.custom.js"></script>
+
   </head>
 
   <body style="overflow-x:hidden;">
+    <div class="loader"></div>
 
     <!-- NAVBAR
     ================================================== -->
@@ -66,7 +48,6 @@
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#testimonials">testimonials</a></li>
-                <li><a href="#projects">projects</a></li>
                 <li class="hidden-sm"><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
@@ -108,8 +89,8 @@
           <div class="col-lg-12 overlay-text">
             <h2 style="font-size:3em;" class="hidden-sm">We don't just talk about results.<br>We produce them.</h2>
             <p style="margin: 0 10em;text-align: justify;line-height: 2; font-size: 1.25em;">Technology is nothing without talent, which is why Redloop puts cutting-edge web development tools in the hands of experts.  Our team of highly-skilled engineers use Node and React JS to build complex, powerful and modern web applications for businesses of all sizes, from start-ups and SMBs to large enterprises.  </p>
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
+          </div>
+        </div>
 
         <div class="row">
           <div class="col-sm-4 text-center overlay-text icons">
@@ -199,7 +180,7 @@
 
     <!-- Testimonials
     ================================================== -->
-    <section id="testimonials" class="dark">
+    <section id="testimonials">
 
       <div class="page-header text-center">
         <h3>TESTIMONIALS</h3>
@@ -226,7 +207,7 @@
                   <blockquote>
                     <div class="row">
                       <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/clients/user1.jpg">
+                       <!-- <img class="img-circle" src="img/clients/user1.jpg">-->
                       </div>
                       <div class="col-sm-9">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris."</p>
@@ -240,7 +221,7 @@
                   <blockquote>
                     <div class="row">
                       <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/clients/user2.jpg">
+                        <!--<img class="img-circle" src="img/clients/user2.jpg">-->
                       </div>
                       <div class="col-sm-9">
                         <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!"</p>
@@ -254,7 +235,7 @@
                   <blockquote>
                     <div class="row">
                       <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/clients/user3.jpg">
+                        <!--<img class="img-circle" src="img/clients/user3.jpg">-->
                       </div>
                       <div class="col-sm-9">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris."</p>
@@ -275,85 +256,7 @@
       </div>
 
     </section>
-
-
-    <!-- Portfolio
-    ================================================== -->
-    <section class="section-content section-isotope separator" id="projects">
-
-      <div class="page-header text-center">
-        <h3>Projects</h3>
-        <h2>OUR LATEST WORK</h2>
-      </div>
-
-      <div class="container">
-        <div id="filters" class="button-group text-center">
-          <button data-filter-value="*" class="active">Show All</button>
-          <button data-filter-value=".web">Web</button>
-          <button data-filter-value=".icons">Icons</button>
-          <button data-filter-value=".font">Font</button>
-          <button data-filter-value=".mobile">Mobile</button>
-        </div>
-        <div class="row demo-3">
-          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
-
-            <div class="col-sm-6 col-md-4 portfolio-item wedding">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>婚纱1</h3>
-                  <span>Wedding</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="img/thumbs/thumb8.jpg" alt="婚纱1">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="img/thumbs/thumb3.jpg" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="查看"><i class="fa fa-plus"></i></a>
-                  <a href="img/thumbs/thumb8.jpg" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="单独打开"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="col-sm-6 col-md-4 portfolio-item wedding">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>婚纱2</h3>
-                  <span>Wedding</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="img/thumbs/thumb3.jpg" alt="婚纱1">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="img/thumbs/thumb3.jpg" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="查看"><i class="fa fa-plus"></i></a>
-                  <a href="img/thumbs/thumb8.jpg" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="单独打开"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="col-sm-6 col-md-4 portfolio-item wedding">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>婚纱3</h3>
-                  <span>Wedding</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="img/thumbs/thumb8.jpg" alt="婚纱1">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="img/product/wedding3.jpg" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="查看"><i class="fa fa-plus"></i></a>
-                  <a href="img/product/wedding3.jpg" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="单独打开"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
-
+    
 
     <!-- Team
     ================================================== -->
@@ -534,11 +437,11 @@
     <script src="js/custom.js"></script>
 
     <script src="js/less-1.6.1.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+</script>
 
-    <script>
-
-
-
-    </script>
   </body>
 </html>
