@@ -187,30 +187,7 @@ function magnificPopup() {
 
 
 
-/* --- Isotope ------------------- */
 
-function isotope() {
-
- var $container = $('#portfolio');
-
- // init
- $container.imagesLoaded( function(){
-   $container.isotope({
-     // options
-     itemSelector: '.portfolio-item',
-     layoutMode: 'fitRows'
-   });
- });
-
- // filter items on button click
- $('#filters').on( 'click', 'button', function( event ) {
-   var filterValue = $(this).attr('data-filter-value');
-   $container.isotope({ filter: filterValue });
-   $('#filters button').removeClass('active');
-   $(this).addClass('active');
- });
-
-}
 
 
 /* --- Scroll to Anchor ------------------- */

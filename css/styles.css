@@ -108,7 +108,6 @@ h6,
 .h5,
 .h6 {
   font-family: "Montserrat Black", sans-serif;
-  font-weight: 5000;
   line-height: 1.1;
   color: inherit;
   font-weight: bold;
@@ -447,7 +446,7 @@ blockquote {
   font-weight: bold;
   font-height:0.5em;
   margin: 0 0 0 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 .cbp-af-header .nav a.signup {
