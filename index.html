@@ -1,58 +1,37 @@
 
 <!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="zh-cn"> <![endif]-->
-<!--[if IE 9]> <html class="ie9" lang="zh-cn"> <![endif]-->
-<!--[if IE 10]> <html class="ie10" lang="zh-cn"> <![endif]-->
-<!--[if (gt IE 10)|!(IE)]> <html lang="zh-cn"> <![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <title>Redloop Technologies</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <!--<link href="css/theme.css" rel="stylesheet">-->
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!--link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'-->
+    <script src="//localhost:9000/livereload.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-82687614-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>  
-  <script src="//localhost:9000/livereload.js"></script>
-    <script src="js/modernizr.custom.js"></script>
   </head>
 
-  <body>
-
-    <!-- end Theme Options (for demo purposes only) -->
+  <body style="overflow-x:hidden;">
+    <div class="loader"></div>
 
     <!-- NAVBAR
     ================================================== -->
+    <style type="text/css">
+    .cbp-af-header.cbp-af-header-shrink {
+      background-color: #F76361;
+    }
+    .cbp-af-header.cbp-af-header-shrink .navbar-nav .current > a {
+        color: #2B2D35 !important;
+    }
+    </style>
     <div class="navbar-wrapper cbp-af-header">
       <div class="container">
 
@@ -75,9 +54,7 @@
               <ul class="nav navbar-nav pull-right">
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">testimonials</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li class="hidden-sm"><a href="#team">Team</a></li>
+                <li class="hidden-sm"><a href="#testimonials">testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -116,31 +93,32 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-12 overlay-text">
-            <h2>WE ALWAYS DELIVER MORE THAN EXPECTED</h2>
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
+            <h2 style="font-size:3em;" class="hidden-sm">We don't just talk about results.<br>We produce them.</h2>
+            <p style="margin: 0 10em;text-align: justify;line-height: 2; font-size: 1.25em;">Technology is nothing without talent, which is why Redloop puts cutting-edge web development tools in the hands of experts.  Our team of highly-skilled engineers use Node and React JS to build complex, powerful and modern web applications for businesses of all sizes, from start-ups and SMBs to large enterprises.  </p>
+          </div>
+        </div>
 
         <div class="row">
           <div class="col-sm-4 text-center overlay-text icons">
             <div class="icon-wrapper">
               <i class="fa fa-cloud icon-large"></i>
             </div>
-            <h3>SKY'S THE LIMIT</h3>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+            <h3>Custom App Development</h3>
+            <p class="text-justify">We use Node and React JS to build custom-tailored apps that integrate smoothly and precisely with your current business model. </p>
           </div>
           <div class="col-sm-4 text-center overlay-text icons">
             <div class="icon-wrapper">
               <i class="fa fa-rocket icon-large"></i>
             </div>
-            <h3>BIG IDEAS</h3>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+            <h3>Consultation & Strategy</h3>
+            <p class="text-justify">We give your business the education and planning it needs to overcome complex problems and thrive in the digital landscape.</p>
           </div>
           <div class="col-sm-4 text-center overlay-text icons">
             <div class="icon-wrapper">
               <i class="fa fa-lightbulb-o icon-large"></i>
             </div>
-            <h3>CREATIVE EXECUTION</h3>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+            <h3>Enterprise Solutions</h3>
+            <p class="text-justify">We can help your corporation reach the elite ranks of companies like Apple, Amazon, Sony with our exceptional NodeJS backend services that prioritize speed, scale, security, and superior performance.    </p>
           </div>
         </div><!-- /.row -->
       </div>
@@ -158,14 +136,14 @@
         <div class="row">
           <div class="col-sm-5 overlay-text">
             <div class="vertical-align">
-              <h2>WE ARE DEVOTED TO OUR CRAFT</h2>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2>Scalable & Robust NodeJS Solutions</h2>
+              <p>Efficient, secure and highly-scalable, our NodeJS applications are enterprise-ready and offer superior functionality across all web and mobile platforms.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="overlay-bg black"></div>
+      <div class="overlay-bg"></div>
 
     </section>
 
@@ -179,30 +157,36 @@
           </div>
           <div class="col-sm-5 col-sm-offset-1">
             <div class="vertical-align">
-              <h2>ATTENTION IS IN THE DETAILS.</h2>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2>Rapid Front-End Development With ReactJS</h2>
+              <p>Cut costs and accelerate time-to-market with ReactJS's ultra-fast, ultra-efficient development cycle.  Redloop uses React to create massive applications loaded with functionality. </p>
             </div>
           </div>
         </div>
-        <!--<div class="row">-->
-          <!--<div class="col-sm-5">-->
-            <!--<div class="vertical-align">-->
-              <!--<h2>世界杯女神，韩一菲光临夏宝宝婚纱！</h2>-->
-              <!--<p>夏宝宝工作室为多为影视歌明星所选！</p>-->
-            <!--</div>-->
-          <!--</div>-->
-          <!--<div class="col-sm-5 text-center col-sm-offset-1">-->
-            <!--<img class="margin-top img-responsive" src="img/hanyifei.jpg" alt="Generic placeholder image" data-scrollreveal="move 100px and enter from the left after 0.55s" width="429">-->
-          <!--</div>-->
-        <!--</div>-->
       </div>
+
+    </section>
+
+    <section id="featured3" class="dark with-bg">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 overlay-text">
+            <div class="vertical-align">
+              <h2>Fast, Reliable & Growth-Oriented Development</h2>
+              <p>We specialise in front and back-end services using React & Node JS, with powerful web apps calibrated for performance and optimized for success.  Ready to grow your business?  Rely on Redloop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay-bg" style="background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.81) 1%, rgba(0, 0, 0, 0.93) 100%);"></div>
 
     </section>
 
 
     <!-- Testimonials
     ================================================== -->
-    <section id="testimonials" class="dark">
+    <section id="testimonials">
 
       <div class="page-header text-center">
         <h3>TESTIMONIALS</h3>
@@ -220,16 +204,16 @@
                 <li data-target="#quote-carousel" data-slide-to="1"></li>
                 <li data-target="#quote-carousel" data-slide-to="2"></li>
               </ol>
-              
+
               <!-- Carousel Slides / Quotes -->
               <div class="carousel-inner">
-              
+
                 <!-- Quote 1 -->
                 <div class="item active">
                   <blockquote>
                     <div class="row">
                       <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/clients/user1.jpg">
+                       <img class="img-circle" src="img/clients/user1.jpg">
                       </div>
                       <div class="col-sm-9">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris."</p>
@@ -243,7 +227,7 @@
                   <blockquote>
                     <div class="row">
                       <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/clients/user2.jpg">
+                       <img class="img-circle" src="img/clients/user2.jpg">
                       </div>
                       <div class="col-sm-9">
                         <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!"</p>
@@ -257,7 +241,7 @@
                   <blockquote>
                     <div class="row">
                       <div class="col-sm-3 text-center">
-                        <img class="img-circle" src="img/clients/user3.jpg">
+                       <img class="img-circle" src="img/clients/user3.jpg">
                       </div>
                       <div class="col-sm-9">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris."</p>
@@ -267,131 +251,13 @@
                   </blockquote>
                 </div>
               </div>
-              
+
               <!-- Carousel Buttons Next/Prev -->
               <a data-slide="prev" href="#quote-carousel" class="left carousel-control visible-md visible-lg"><i class="fa fa-chevron-left"></i></a>
               <a data-slide="next" href="#quote-carousel" class="right carousel-control  visible-md visible-lg"><i class="fa fa-chevron-right"></i></a>
-            </div>                          
-          </div>
-        </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Portfolio
-    ================================================== -->
-    <section class="section-content section-isotope separator" id="projects">
-
-      <div class="page-header text-center">
-        <h3>Projects</h3>
-        <h2>OUR LATEST WORK</h2>
-      </div>
-
-      <div class="container">
-        <div id="filters" class="button-group text-center">
-          <button data-filter-value="*" class="active">Show All</button>
-          <button data-filter-value=".web">Web</button>
-          <button data-filter-value=".icons">Icons</button>
-          <button data-filter-value=".font">Font</button>
-          <button data-filter-value=".mobile">Mobile</button>
-        </div>
-        <div class="row demo-3">
-          <div id="portfolio" class="js-isotope grid cs-style-1" data-isotope-options='{ "columnWidth": 200, "itemSelector": ".portfolio-item" }'>
-
-            <div class="col-sm-6 col-md-4 portfolio-item wedding">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>婚纱1</h3>
-                  <span>Wedding</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="img/thumbs/thumb8.jpg" alt="婚纱1">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="img/thumbs/thumb3.jpg" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="查看"><i class="fa fa-plus"></i></a>
-                  <a href="img/thumbs/thumb8.jpg" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="单独打开"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="col-sm-6 col-md-4 portfolio-item wedding">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>婚纱2</h3>
-                  <span>Wedding</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="img/thumbs/thumb3.jpg" alt="婚纱1">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="img/thumbs/thumb3.jpg" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="查看"><i class="fa fa-plus"></i></a>
-                  <a href="img/thumbs/thumb8.jpg" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="单独打开"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="col-sm-6 col-md-4 portfolio-item wedding">
-              <figure>
-                <!-- Thumb Info -->
-                <div class="info">
-                  <h3>婚纱3</h3>
-                  <span>Wedding</span>
-                </div>
-                <!-- Thumbnail -->
-                <img src="img/thumbs/thumb8.jpg" alt="婚纱1">
-                <!-- Thumb links -->
-                <figcaption>
-                  <a href="img/product/wedding3.jpg" class="preview tooltips popup-gallery" data-toggle="tooltip" data-placement="bottom" title="查看"><i class="fa fa-plus"></i></a>
-                  <a href="img/product/wedding3.jpg" class="link tooltips" data-toggle="tooltip" data-placement="bottom" title="单独打开"><i class="fa fa-external-link"></i></a>
-                </figcaption>
-              </figure>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Team
-    ================================================== -->
-    <section id="team" class="dark">
-
-      <div class="page-header text-center">
-        <h3>Our Team</h3>
-        <h2>OUR TALENTED TEAM</h2>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="owl-example" class="owl-carousel">
-              <div class="item">
-                <img class="display-pic" src="img/user-avatar4.jpg" alt="工作室环境">
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/user-avatar5.jpg" alt="工作室环境">
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/user-avatar6.jpg" alt="工作室环境">
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/user-avatar1.jpg" alt="工作室环境">
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/user-avatar2.jpg" alt="工作室环境">
-              </div>
-              <div class="item">
-                <img class="display-pic" src="img/user-avatar3.jpg" alt="工作室环境">
-              </div>
-
             </div>
           </div>
+        </div>
         </div>
       </div>
 
@@ -400,10 +266,10 @@
 
     <!-- Call to Action
     ================================================== -->
-    <section class="cta text-center">
+    <section class="cta text-center" style="background: #D0D0D0;">
 
       <div class="container">
-        
+
         <div class="row">
           <div class="col-lg-12">
             <h2>HAVE A GREAT IDEA? <span class="highlight">LET US HELP!</span></h2>
@@ -425,7 +291,7 @@
                   <button type="submit">Send your message</button>
                 </footer>
               </form>
-              
+
             </div>
           </div>
         </div>
@@ -439,7 +305,7 @@
     ================================================== -->
     <footer id="contact" class="footer">
 
-      <div class="container">    
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="col-sm-3 col-md-3">
@@ -491,8 +357,8 @@
 
     </footer>
 
- 
-  
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -500,20 +366,17 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scrollReveal.js"></script>
     <script src="js/jquery.scrollTo.js" defer="defer"></script>
     <script src="js/jquery.nav.js" defer="defer"></script>
     <script src="js/imagesloaded.pkgd.min.js" defer="defer"></script>
-    <script src="js/isotope.min.js" defer="defer"></script>
-    <script src="js/jquery.magnific-popup.min.js" defer="defer"></script>
     <script src="js/jqBootstrapValidation.js" defer="defer"></script>
     <script src="js/custom.js"></script>
-
-    <script>
-
-
-
+    <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("slow");
+    })
     </script>
+
   </body>
 </html>
