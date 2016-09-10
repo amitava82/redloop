@@ -130,13 +130,6 @@ function fullScreenContainer() {
 }
 
 
-/* --- Tooltips ------------------- */
-
-function tooltips() {
-    $('.tooltips').tooltip();
-}
-
-
 /* --- Show/Hide Contact Form ------------------- */
 
 function toggleContactForm() {
@@ -145,15 +138,6 @@ function toggleContactForm() {
         $('.contact-form').slideToggle(300);
     });
 }
-
-
-/* --- scrollReveal ------------------- */
-
-window.scrollReveal = new scrollReveal();
-
-
-/* --- magnific popup ------------------- */
-
 
 
 /* --- Scroll to Anchor ------------------- */
@@ -175,50 +159,6 @@ function scrollAnchor() {
     });
 
 }
-
-/* --- One Page Scroll ------------------- */
-
-
-$(window).scroll(function () {
-    var windowpos = $(window).scrollTop();
-
-    if (windowpos <= 500) {
-        $('.nav li.current').removeClass('current');
-    }
-});
-
-
-//Placeholder fixed for Internet Explorer
-$(function () {
-    var input = document.createElement("input");
-    if (('placeholder' in input) == false) {
-        $('[placeholder]').focus(function () {
-            var i = $(this);
-            if (i.val() == i.attr('placeholder')) {
-                i.val('').removeClass('placeholder');
-                if (i.hasClass('password')) {
-                    i.removeClass('password');
-                    this.type = 'password';
-                }
-            }
-        }).blur(function () {
-            var i = $(this);
-            if (i.val() == '' || i.val() == i.attr('placeholder')) {
-                if (this.type == 'password') {
-                    i.addClass('password');
-                    this.type = 'text';
-                }
-                i.addClass('placeholder').val(i.attr('placeholder'));
-            }
-        }).blur().parents('form').submit(function () {
-            $(this).find('[placeholder]').each(function () {
-                var i = $(this);
-                if (i.val() == i.attr('placeholder'))
-                    i.val('');
-            })
-        });
-    }
-});
 
 
 /*When clicking on Full hide fail/success boxes */

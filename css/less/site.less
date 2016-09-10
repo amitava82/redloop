@@ -215,7 +215,6 @@
 }
 
 
-section h2,
   section.content h2 {
     font-size: 1.5em;
     padding: 0 0.4em;
@@ -261,9 +260,8 @@ section h2,
   }
   section h2 {
     font-size: 3em;
-    font-weight: 100;
-    letter-spacing: 1px;
-    margin: 0.5em 0;
+    //letter-spacing: 1px;
+    //margin: 0.5em 0;
     line-height: 1.3;
   }
 
@@ -307,8 +305,7 @@ section h2,
     background-size: cover;
   }
   section.dark {
-    background-color: black;
-    background: url('../img/rk4qwG.jpg');
+    background-color: #333333;
 
   }
   section.dark.with-bg {
@@ -376,18 +373,10 @@ section h2,
     padding-bottom: 0;
   }
   section.cta .btn {
-    background: #E73C3C;
-    color: white;
-    padding: 0.5em 2em;
-    font-size: 1em;
     margin: 0 1em;
-    border: 2px solid #E73C3C;
     text-transform: uppercase;
   }
-  section.cta .btn:hover {
-    background: #df1b1b;
-    border-color: #df1b1b;
-  }
+
   section .overlay-text {
     z-index: 10;
   }
@@ -502,11 +491,7 @@ section h2,
     padding: 1em 0;
   }
   .contact-form footer button {
-    background: #E73C3C;
     border-radius: 4px;
-    border: 0;
-    color: white;
-    padding: 1.3em 2em;
     margin-top: 1em;
     transition: all linear .2s;
 
@@ -514,9 +499,7 @@ section h2,
       opacity: .5;
     }
   }
-  .contact-form footer button:hover {
-    background: #d61a1a;
-  }
+
   .contact-form footer button:focus {
     outline: none;
   }
@@ -529,23 +512,7 @@ section h2,
     color: rgba(51, 51, 51, 0.7);
   }
 
-   section h2,
-    section.content h2 {
-      font-size: 1.5em;
-      padding: 0 0.4em;
-    }
-    section p,
-    section.content p {
-      padding: 0;
-    }
-    section.separator::before,
-    section.content.separator::before {
-      bottom: -9px;
-    }
-    section.separator::after,
-    section.content.separator::after {
-      bottom: -4px;
-    }
+
     #testimonials ul {
       padding-left: 0;
     }
@@ -598,10 +565,10 @@ section h2,
       width: 140px;
       height: 140px;
       border-radius: 50%;
-      background-color: rgba(231, 60, 60, 0.4);
+      background-color: @brand-primary;
       text-align: center;
       margin: 2em auto 0;
-      padding: 3em 0;
+      padding: 2.5em 0;
     }
     .icons .icon-wrapper .icon-large {
       color: white;
