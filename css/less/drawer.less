@@ -1,0 +1,325 @@
+@import "https://daneden.github.io/animate.css/animate.min.css";
+
+/*-------------------------------*/
+/*           VARIABLES           */
+/*-------------------------------*/
+
+// BACKGROUND COLOR
+@bg-color: @brand-primary;
+
+// TEXT COLOR
+@text-color: #fff;
+
+// HAMBURGER COLOR
+@hamburger-color-closed: white;
+@hamburger-color-open: white;
+
+// WIDTH VARIABLES
+@width1: 240px;
+@width2: 100px;
+@full-width: 100%;
+
+// HEIGHT VARIABLES
+@full-height: 100%;
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body,
+html {
+  height: @full-height;
+  background-color: @bg-color;
+}
+
+
+
+.nav {
+  .open>a {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-fixed-right {
+  right: 0;
+  position: fixed;
+  border-width: 0 0 1px;
+}
+
+
+/*-------------------------------*/
+/*           Wrappers            */
+/*-------------------------------*/
+
+#wrapper {
+  -moz-transition: padding 0.5s ease;
+  -o-transition: padding 0.5s ease;
+  -webkit-transition: padding 0.5s ease;
+  padding-right: 0;
+}
+#wrapper.toggled {
+  padding-right: 240px;
+  #sidebar-wrapper {
+    width: @width1;
+  }
+  #page-content-wrapper {
+    margin-left: -240px;
+    position: absolute;
+  }
+}
+#sidebar-wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background: @brand-primary;
+  height: @full-height;
+  right: 240px;
+  margin-right: -240px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+  width: 0;
+  z-index: 1000;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+#page-content-wrapper {
+  width: @full-width;
+  -moz-transition: margin 0.5s ease;
+  -o-transition: margin 0.5s ease;
+  -webkit-transition: margin 0.5s ease;
+}
+
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: @width1;
+  li {
+    display: inline-block;
+    line-height: 20px;
+    position: relative;
+    width: @full-width;
+    &.link:before {
+      background-color: white;
+      content: '';
+      height: @full-height;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: width .2s ease-in;
+      width: 3px;
+      z-index: -1;
+    }
+
+    &:hover {
+      &:before {
+        transition: width .2s ease-in;
+        width: @full-width;
+      }
+    }
+    a {
+      color: white;
+      display: block;
+      padding: 10px 15px 10px 30px;
+      text-decoration: none;
+
+      &:hover{
+        color: @brand-primary !important;
+      }
+    }
+
+    &.sidebar-brand {
+      margin: 10px 0 40px;
+      img {
+        width: 170px;
+      }
+    }
+  }
+  li.open {
+    &:hover {
+      before {
+        transition: width .2s ease-in;
+        width: @full-width;
+      }
+    }
+  }
+  .dropdown-menu {
+    background-color: #222222;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: @full-width;
+  }
+}
+.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.sidebar-nav>.sidebar-brand {
+  font-size: 20px;
+  height: 65px;
+  line-height: 44px;
+}
+
+
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+
+.hamburger {
+  background: transparent;
+  border: none;
+  display: block;
+  height: 32px;
+  margin-left: 15px;
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  width: 32px;
+  z-index: 999;
+  //-webkit-transition: all .35s ease-in-out;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+
+  &.is-open {
+    right: 260px;
+  }
+}
+.hamburger.is-closed {
+  &:before {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: @width2;
+  }
+  &:hover {
+    before {
+      -webkit-transform: translate3d(-100px,0,0);
+      -webkit-transition: all .35s ease-in-out;
+      display: block;
+      opacity: 1;
+    }
+    .hamb-top {
+      -webkit-transition: all .35s ease-in-out;
+      top: 0;
+    }
+    .hamb-bottom {
+      -webkit-transition: all .35s ease-in-out;
+      bottom: 0;
+    }
+  }
+  .hamb-top {
+    -webkit-transition: all .35s ease-in-out;
+    background-color: @hamburger-color-closed;
+    top: 5px;
+  }
+  .hamb-middle {
+    background-color: @hamburger-color-closed;
+    margin-top: -2px;
+    top: 50%;
+  }
+  .hamb-bottom {
+    -webkit-transition: all .35s ease-in-out;
+    background-color: @hamburger-color-closed;
+    bottom: 5px;
+  }
+}
+.hamburger.is-closed .hamb-top, .hamburger.is-closed .hamb-middle, .hamburger.is-closed .hamb-bottom, .hamburger.is-open .hamb-top, .hamburger.is-open .hamb-middle, .hamburger.is-open .hamb-bottom  {
+  height: 4px;
+  position: absolute;
+  width: @full-width;
+}
+.hamburger.is-open {
+  .hamb-top {
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+    background-color: @hamburger-color-open;
+    margin-top: -2px;
+    top: 50%;
+  }
+  .hamb-middle {
+    background-color: @hamburger-color-open;
+    display: none;
+  }
+  .hamb-bottom {
+    -webkit-transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+    // background-color: #1a1a1a;
+    background-color: @hamburger-color-open;
+    margin-top: -2px;
+    top: 50%;
+  }
+  &:before {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transition: all .35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: @width2;
+  }
+  &:hover {
+    before {
+      -webkit-transform: translate3d(-100px,0,0);
+      -webkit-transition: all .35s ease-in-out;
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+/*-------------------------------*/
+/*          Dark Overlay         */
+/*-------------------------------*/
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: @full-width;
+    height: @full-height;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+}
