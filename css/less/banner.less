@@ -5,7 +5,7 @@
   bottom: 0;
   top: 0;
   max-width: 80%;
-  max-height: 25%;
+  max-height: 35%;
   z-index: 10;
   margin: auto;
   text-align: center;
@@ -16,6 +16,7 @@
 }
 
 #intro {
+  background: @brand-primary;
   @media all and (max-width: 640px){
     min-height: 300px;
   }
@@ -30,6 +31,10 @@
 
   h1 {
     font-size: 64px;
+  }
+
+  h1,h2 {
+    color: white;
   }
 
   .bg-overlay {
