@@ -49,7 +49,7 @@ $(document).ready(function () {
         sendMail({
             name: name,
             phone: phone,
-            email: email,
+            from_email: email,
             message: message
         }).then(function (response) {
             console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
