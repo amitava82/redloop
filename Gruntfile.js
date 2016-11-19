@@ -10,7 +10,8 @@ module.exports = function(grunt) {
         less: {
             compile:{
                 options: {
-                    compress: true
+                    compress: true,
+                    paths: ['node_modules/bootstrap/less', 'css/less']
                 },
                 files: {
                     "css/styles.css":"css/less/styles.less"
