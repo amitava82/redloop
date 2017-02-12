@@ -3,6 +3,7 @@
  */
 
 module.exports = function(grunt) {
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // Project configuration.
     grunt.initConfig({
@@ -29,6 +30,14 @@ module.exports = function(grunt) {
                     }
                 }
             }
+        },
+        connect: {
+            server: {
+                options: {
+                    port: 9001,
+                    base: __dirname
+                }
+            }
         }
     });
 
@@ -37,6 +46,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('default', ['less', 'connect', 'watch']);
 
 };

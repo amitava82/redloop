@@ -35,6 +35,11 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
     });
 
+    $('.overlay').click(function () {
+        $('#wrapper').toggleClass('toggled');
+        hamburger_cross();
+    });
+
     $('#contactForm').on('submit', function (e) {
         e.preventDefault();
         var name = $("input#name").val();
@@ -152,7 +157,7 @@ function scrollAnchor() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 650);
+                }, 350);
                 return false;
             }
         }
