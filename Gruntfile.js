@@ -4,6 +4,8 @@
 
 module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+
 
     // Project configuration.
     grunt.initConfig({
@@ -38,6 +40,14 @@ module.exports = function(grunt) {
                     base: __dirname
                 }
             }
+        },
+        copy: {
+          main: {
+            files: [
+              // includes files within path and its sub-directories
+              {expand: true, src: ['js/**', 'css/**/*.css', 'fonts/**', 'img/***', 'index.html'], dest: 'dist/'}
+            ],
+          },
         }
     });
 
@@ -47,5 +57,6 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['less', 'connect', 'watch']);
+    grunt.registerTask('deploy', ['less', 'copy']);
 
 };
